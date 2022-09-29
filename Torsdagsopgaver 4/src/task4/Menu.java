@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    private ArrayList<String> options;
+    private final ArrayList<String> options;
 
     public Menu(ArrayList<String> options) {
         this.options = options;
@@ -13,7 +13,7 @@ public class Menu {
 
     public String showMenu() {
         int i = 0;
-        for (String option : options) {
+        for (String option : getOptions()) {
             System.out.println(++i + ") " + option);
         }
 
@@ -21,13 +21,7 @@ public class Menu {
         return scanner.nextLine();
     }
 
-
-
     public ArrayList<String> getOptions() {
         return options;
-    }
-
-    public void setOptions(ArrayList<String> options) {
-        this.options = options;
     }
 }

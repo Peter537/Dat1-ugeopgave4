@@ -6,12 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<String> actions = new ArrayList<>();
-        //"1) Start game" "2) Resume game" "3) Pause game" "4) End game"
         actions.add("Start game");
         actions.add("Resume game");
         actions.add("Pause game");
         actions.add("End game");
-
         System.out.println(actions.get(2)); // expected output: "Pause game"
 
         Menu menu = new Menu(actions);
@@ -22,7 +20,6 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Please enter a number.");
         }
-
     }
 
     public static void doAction(int action) {
@@ -33,7 +30,5 @@ public class Main {
             case 4 -> System.out.println("Ending game");
             default -> System.out.println("Invalid choice");
         }
-
     }
-
 }
