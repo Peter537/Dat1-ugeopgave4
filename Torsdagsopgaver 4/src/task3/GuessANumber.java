@@ -17,14 +17,12 @@ public class GuessANumber {
 
     private static void makeAGuess(){
         Scanner scanner = new Scanner(System.in);
-        int guess = -1;
-        try {
-            guess = scanner.nextInt();
-        } catch (Exception e) {
+        if (!scanner.hasNextInt()) {
             System.out.println("Please enter a number.");
             makeAGuess();
         }
 
+        int guess = scanner.nextInt();
         if (guess == rnd_number) {
             System.out.println("Congratulations! You guessed the number!");
         } else {
