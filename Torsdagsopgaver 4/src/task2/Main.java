@@ -13,10 +13,6 @@ public class Main {
         int age = scanner.nextInt();
         System.out.println("You are " + age + " years old.");
         int result = 67 - age;
-        if (result <= 0) {
-            System.out.println("You can retire.");
-        } else {
-            System.out.println("You can retire in " + result + " years.");
-        }
+        System.out.println("You can retire" + (result > 0 ? " in " + result + " years." : " now."));
     }
 }
