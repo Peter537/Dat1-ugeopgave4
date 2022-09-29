@@ -30,6 +30,7 @@ public class TestStudents {
         System.out.println(c);
 
         System.out.println(basic);
+        System.out.println(programming);
         System.out.println(algorithm);
         System.out.println(web);
         System.out.println(databases);
