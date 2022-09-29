@@ -7,13 +7,11 @@ import java.util.Scanner;
 
 public class Cafe {
 
-    private ArrayList<String> coffeeMenu;
+    private final ArrayList<String> coffeeMenu;
 
     public Cafe() {
         this.coffeeMenu = new ArrayList<>();
     }
-
-
 
     public ArrayList<String> getCoffeeMenu() {
         return coffeeMenu;
@@ -31,7 +29,6 @@ public class Cafe {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

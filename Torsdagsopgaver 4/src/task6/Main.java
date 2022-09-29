@@ -8,8 +8,5 @@ public class Main {
         for (String coffee : cafe.getCoffeeMenu()) {
             System.out.println(coffee);
         }
-
     }
-
-
 }
