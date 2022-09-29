@@ -24,4 +24,11 @@ public class Menu {
     public ArrayList<String> getOptions() {
         return options;
     }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "options=" + getOptions() +
+                '}';
+    }
 }

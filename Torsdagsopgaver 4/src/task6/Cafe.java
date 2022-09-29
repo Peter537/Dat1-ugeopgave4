@@ -34,7 +34,7 @@ public class Cafe {
     @Override
     public String toString() {
         return "Cafe{" +
-                "coffeeMenu=" + coffeeMenu +
+                "coffeeMenu=" + getCoffeeMenu() +
                 '}';
     }
 }
