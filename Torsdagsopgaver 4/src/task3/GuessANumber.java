@@ -26,12 +26,9 @@ public class GuessANumber {
         }
 
         if (guess == rnd_number) {
-            System.out.println("You guessed it!");
-        } else if (guess < rnd_number) {
-            System.out.println("Too low. Try again.");
-            makeAGuess();
+            System.out.println("Congratulations! You guessed the number!");
         } else {
-            System.out.println("Too high. Try again.");
+            System.out.println("Try again, your guess was " + (guess > rnd_number ? "too high." : "too low."));
             makeAGuess();
         }
     }
